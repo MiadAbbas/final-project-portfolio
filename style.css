@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgba(23, 106, 145, 0.945);
+    height: 150vh;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+i {
+ font-size: 3rem;
+ color: white;
+ margin-bottom: 10px;
+}
+ul li {
+    display: inline-block;
+    margin-right: 120px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+   
+}
+
+.content {
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 12px;
+
+}
+.image {
+    background-image: url(https://visitsaxony.com/fileadmin/Mediendatenbank_EN/Bilder/Staedte/Dresden/BruehlscheTerrasse_DD__c__pixdd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+     animation: dresden 20s ease-in-out 1;
+}
+.content .text {
+    color: white;
+    width: 100%;
+    margin-right: 10px;
+}
+.content .text h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+span {
+    color: rgba(180, 163, 66, 0.736);
+}
+.content .text p {
+    font-family: 'Sofia', cursive;
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+.icons {
+   
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.container-c{
+    background-image: url(https://img.fotocommunity.com/blaues-wunder-in-dresden-b9669012-c90d-481c-85fa-e75fa5d7f585.jpg?height=1080);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 95vh;
+}
+.info {
+    width: 300px;
+    margin: 10px;
+}
+.info p {
+   text-align: center; 
+}   
+.img {
+    height: 400px;
+    width: 250px;
+    margin: 30px;
+}
+.header-b {
+    background-color: rgba(6, 55, 93, 0.647);
+}
+/* hauptbahnhof */
+.container-b{
+    background-image: url(https://www.wochenkurier.info/fileadmin/user_upload/import/artikel/07/2807/Hauptbahnhof_beleuchtet1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 95vh;
+}
+footer {
+    background-color: rgba(23, 106, 145, 0.945);
+    color: white;
+    padding: 40px;
+    
+}
+/* kontakt */
+#contact-form {
+    background-color:#F2F7F9;
+    width:500px;
+    padding:20px;
+    margin: 50px auto;    
+    border: 6px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
+
+
+#contact-form h2 {
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    width:450px;
+    border: 1px solid #CEE1E8;
+    margin-bottom:20px;
+    padding:4px;
+}
+
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-color: #EBF2F4;
+}
+
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+
+#contact-form label {
+    display:block;
+}
+
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;    
+}
+
+#contact-form #submit-button {
+    width: 100px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    background-color:#8FB5C1;
+    -moz-border-radius:8px;
+}
+
+#contact-form #submit-button:hover {
+    background-color: #A6CFDD;
+}
+
+
+   @keyframes dresden {
+    20%
+     {
+       background-image: url(https://a.cdn-hotels.com/gdcs/production150/d36/161df47c-96a1-40c1-968d-0316fe8dbf7c.jpg?impolicy=fcrop&w=800&h=533&q=medium);
+     }
+     50% {
+ background-image: url(https://www.dresden.de/media/tourismus/sehenswuerdigkeiten/493x330_panorama_dresden_altstadt.jpg.scaled/944272df651acea2572d1e35d36caaf3.jpg);
+     }
+     100% {
+        background-image: url(https://img.fotocommunity.com/blaues-wunder-in-dresden-b9669012-c90d-481c-85fa-e75fa5d7f585.jpg?height=1080);
+     }
+  }
+ @media  (min-width: 480px){
+    .content
+    {
+    display: flex;
+    margin-left: 10%;
+
+    }
+    .image {
+        height: 500px;
+        width: 800px;
+        margin-left: 100px;
+    }
+    .img {
+        height: 400px;
+        width: 400px;
+    }
+    .info {
+        width: 95%;
+        margin: 30px;
+    }
+    .content-text {
+        width: 40%;
+    
+    }
+    .container {
+        height: 100vh;
+    
+    }
+    .icons {
+        margin-left: 190px;
+        width: 20%;
+    }
+    ul li a {
+        margin: 0 20px; 
+        font-size: 1.3rem; 
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+ }
